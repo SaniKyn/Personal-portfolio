@@ -1,8 +1,12 @@
-<h1>Sasha Portfolio</h1>
+<h1>Саша Портфолио</h1>
 
 {% load static%}
 
-<a href="{% static 'portfolio/CV Python developer Гайдукевич Александр.pdf' %}">Resume</a>
+<a href="{%url 'blog:all_blogs' %}">Блог</a>
+<br>
+
+<a href="{% static 'portfolio/CV Python developer Гайдукевич Александр.pdf' %}">Резюме</a>
+<br>
 
 <img src="{% static 'portfolio/саша.png'%}">
 {% for project in projects %}
@@ -11,7 +15,7 @@
 <p>{{ project.description }}</p>
 <img src="{{ project.image.url }}">
 {% if  project.url %}
-<br><a href="{{ project.url }}">Link</a>
+<br><a href="{{ project.url }}">Ссылка</a>
 {% endif %}
 
 
