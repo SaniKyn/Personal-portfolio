@@ -34,24 +34,27 @@
     </div>
 </div>
 
-
 <h2 class="mt-5">Портфолио</h2>
 <hr>
 
-<div class="row row-cols-1 row-cols-md-6">
+<div class="row row-cols-1 row-cols-md-3">
     {% for project in projects %}
     <div class="col mb-4">
         <div class="card">
-            <img src="{{ project.image.url }}" class="card-img-top">
+            <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
+            <div class="card-header">
+                <h2 class="card-title">{{ project.title }}</h2>
+            </div>
             <div class="card-body">
-                <h5 class="card-title">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
+                <p>{{ project.description }}</p>
+            </div>
+            <div class="card-footer">
                 {% if project.url %}
-                <br><a href="{{ project.url }}">Ссылка</a>
+                <a class="btn btn-primary" href="{{ project.url }}" role="button">Ссылка</a>
                 {% endif %}
             </div>
         </div>
     </div>
     {% endfor %}
 </div>
-{% endblock %}
+{% endblock content %}

@@ -7,7 +7,7 @@
 <h1>Привет блог</h1>
 
 
-<h2>Саша написал {{ blogs.count }} пост{{ blogs.count|pluralize:"ов" }}</h2>
+<h2>Саша написал {{ blogs.count }} пост {{ blogs.count|pluralize:"ов" }}</h2>
 
 {% for blog in blogs %}
 
@@ -18,4 +18,4 @@
 
 {% endfor %}
 
-{% endblock %}
+{% endblock content %}
