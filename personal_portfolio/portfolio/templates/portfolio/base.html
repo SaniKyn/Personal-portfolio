@@ -20,26 +20,29 @@
              alt="Nick's Logo">
         <span>Alex Gajd</span>
     </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapsed navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="btn btn-outline-primary" href="{% url 'home' %}">Главная страница</a>
                 <a class="btn btn-outline-primary" href="{% url 'blog:all_blogs' %}">Блог</a>
             </li>
         </ul>
     </div>
-    <div class="collapse navbar-collapse text-center" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a href="{% static 'portfolio/CV Python developer Гайдукевич Александр.pdf' %}"
-                   class="btn btn-outline-secondary" target="_blank">Резюме</a>
-                <a role="button" href="https://www.linkedin.com/feed/" class="btn btn-outline-success" target="_blank">LinkedIn</a>
-            </li>
-        </ul>
+    <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            Информация
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item"
+               href="{% static 'portfolio/CV Python developer Гайдукевич Александр.pdf' %}">Резюме</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/feed/">LinkedIn</a>
+
+        </div>
     </div>
 </nav>
 
+<div class="container">
 {% block content%}{% endblock content %}
+</div>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
