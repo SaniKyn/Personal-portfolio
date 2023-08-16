@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26b3973a-d226-4ea7-8de4-7e1fbaad8f6e" name="Changes" comment="CV">
-      <change beforePath="$PROJECT_DIR$/personal_portfolio/personal_portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/personal_portfolio/personal_portfolio/settings.py" afterDir="false" />
+    <list default="true" id="26b3973a-d226-4ea7-8de4-7e1fbaad8f6e" name="Changes" comment="requirements">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670828324577</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="new_local_settings">
+      <created>1670836309678</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670836309678</updated>
+    </task>
+    <task id="LOCAL-00015" summary="requirements">
+      <created>1670836490348</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670836490348</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +295,8 @@
     <MESSAGE value="home_carousel_modified_and_btn-group" />
     <MESSAGE value="home_carousel_modified_and_btn-group_1" />
     <MESSAGE value="CV" />
-    <option name="LAST_COMMIT_MESSAGE" value="CV" />
+    <MESSAGE value="new_local_settings" />
+    <MESSAGE value="requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
   </component>
 </project>
